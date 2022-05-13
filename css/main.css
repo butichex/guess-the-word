@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+body {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  background-color: #28293E;
+}
+
+.container {
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.header {
+  height: 8rem;
+  width: 100%;
+}
+
+.header__inner {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  width: 80%;
+}
+
+.attempts__attempt {
+  margin: 0px 0px 1rem 0px;
+}
+
+.attempt__cell {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background-color: #333450;
+}
+
+.attempt__name {
+  margin: 0px 0px 1rem 0px;
+  color: white;
+}
+
+.attempt__group {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (7rem)[5];
+      grid-template-columns: repeat(5, 7rem);
+  -ms-grid-rows: (7rem)[1];
+      grid-template-rows: repeat(1, 7rem);
+  grid-gap: 0.6875rem;
+}
+
+.keyboard__12-cells {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2rem)[11];
+      grid-template-columns: repeat(11, 2rem);
+  -ms-grid-rows: (2rem)[1];
+      grid-template-rows: repeat(1, 2rem);
+}
+
+.show-keyboard-button {
+  height: 5%;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  border-radius: 0.5rem 0.5rem 0px 0px;
+  background-color: #333450;
+  display: inline-block;
+  color: white;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateY(40%);
+          transform: translateY(40%);
+}
+
+.show-keyboard-button:hover {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+/*# sourceMappingURL=main.css.map */
