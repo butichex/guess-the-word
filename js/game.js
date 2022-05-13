@@ -31,7 +31,7 @@ function Game() {
                 let publications = doc.querySelector("#publications");
                 console.log(publications);
                 let firstPublication = publications.querySelector(".exercise-card");
-                let firstPublicationImageURL = 'rebuskids.ru/' + firstPublication.querySelector("img").src.split("/").splice(3).join("/");
+                let firstPublicationImageURL = 'https://rebuskids.ru/' + firstPublication.querySelector("img").src.split("/").splice(3).join("/");
                 let firstPublicationText = firstPublication.querySelector(".task-rebus-right").innerHTML;
                 console.log(firstPublicationImageURL)
                 return fetch(firstPublicationImageURL, { "mode": "no-cors" }).then(response_object => response_object.json())
